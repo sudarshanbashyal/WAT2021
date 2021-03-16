@@ -1,0 +1,46 @@
+:root {
+    --dark-blue: #19535f;
+    --light-gray: rgb(240, 240, 240);
+    --light-green: #acfce4;
+    --light-red: rgb(255, 183, 183);
+    --dark-green: #43aa8b;
+    --dark-red: #c52638;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    height: 6vh;
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 3rem;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li:not(nav li:last-child) {
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.error-message {
+    color: var(--dark-red);
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}

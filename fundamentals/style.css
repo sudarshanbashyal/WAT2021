@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin: 50px 0px 50px 0px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+h2::after {
+    content: '';
+    width: 70px;
+    height: 7px;
+    background-color: rgb(29, 135, 196);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+strong {
+    display: block;
+    margin-bottom: 15px;
+}
+
+hr {
+    margin: 30px 0px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.password-validator {
+    display: flex;
+    justify-content: space-between;
+}
+
+.password-validator div {
+    flex-basis: 50%;
+}
+
+.password-validator div:first-child {
+    border-right: 1px solid black;
+}
+
+.password-validator div:last-child {
+    text-align: right;
+}
+
+.ticket-calculator {
+    width: 40%;
+    padding: 1.5rem 2rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    border-radius: 7px;
+    flex-basis: 30%;
+    padding: 2rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product h3 {
+    text-transform: capitalize;
+}
+
+.quantity-table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.quantity-table th,
+.quantity-table td {
+    padding: 0.5rem 1rem;
+}
+
+.for-loop {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
