@@ -1,0 +1,22 @@
+.container {
+  margin-top: 80px;
+  width: 600px;
+}
+
+.container h2 {
+  margin-bottom: 40px;
+}
+
+.container form {
+  margin: 1.5rem;
+}
+
+.container form .btn-primary {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.container form .alert {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=login.css.map */

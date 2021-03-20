@@ -1,0 +1,21 @@
+.container {
+    margin-top: 80px;
+    width: 600px;
+
+    h2 {
+        margin-bottom: 40px;
+    }
+
+    form {
+        margin: 1.5rem;
+
+        .btn-primary {
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .alert {
+            margin-top: 20px;
+        }
+    }
+}

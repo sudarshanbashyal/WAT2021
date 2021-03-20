@@ -1,0 +1,22 @@
+.container {
+  margin-top: 80px;
+  width: 900px;
+}
+
+.container form {
+  margin: 1.5rem;
+}
+
+.container form .form-group .form-control {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.container form .form-group .btn-primary {
+  margin: 15px 0px;
+}
+
+.container form .alert {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=registerForm.css.map */
