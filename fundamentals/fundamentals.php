@@ -270,6 +270,37 @@
             echo "</h3>";
         
         ?>
+
+        <hr>
+
+        <h2>Extension Exercise</h2>
+        <?php
+        
+            $password = 'password';
+            $password = trim($password);
+            $password = htmlentities($password);
+
+            if(isset($password) && !empty($password)){
+                echo "<h3>Password: $password</h3>";
+
+                if(strlen($password)<6 || strlen($password)>8){
+                    echo "<h3>Your password must be 6 to 8 characters long.</h3>";
+                }
+                elseif(is_numeric($password)){
+                    echo "<h3>Your password cannot be a number.</h3>";
+                }
+                else{
+                    echo "<h3>Password OK.</h3>";
+                    $encryptedPassword = md5($password);
+                    echo "<h3>Encrypted Password: $encryptedPassword</h3>";
+                }
+
+            }
+            else{
+                echo "</h3>Please set your password first.</h3>";
+            }
+        
+        ?>
     
     </div>
     

@@ -20,9 +20,9 @@
             $password = filter_var($password, FILTER_SANITIZE_SPECIAL_CHARS);
 
             $hashedPassword = md5($password);
-            $insertQuery = "SELECT * FROM users WHERE username='$username' AND password='$hashedPassword'";
+            $selectQuery = "SELECT * FROM users WHERE username='$username' AND password='$hashedPassword'";
     
-            $result = mysqli_query($connection, $insertQuery);
+            $result = mysqli_query($connection, $selectQuery);
 
             // check if the user exists
             if(mysqli_num_rows($result)==0){

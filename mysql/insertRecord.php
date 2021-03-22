@@ -1,6 +1,7 @@
 <?php
 
     include 'connection.php';
+    error_reporting(0);
 
     if(isset($_POST['submit'])){
 
@@ -24,10 +25,13 @@
             // sql queries and db entry
             $insertQuery = "INSERT INTO users(firstName, surname, email, password, gender, age) VALUES('$firstName', '$lastName', '$email', '$password', '$gender', $age)";
             mysqli_query($connection, $insertQuery);
-            header('Location: http://localhost/wat2021/mysql/selectRecord.php');
+            header('Location: selectRecord.php');
 
         }
 
+    }
+    else{
+        header('Location: mysql.php');
     }
 
 ?>
